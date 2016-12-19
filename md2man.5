@@ -1,0 +1,66 @@
+.TH "MD2MAN" "5" "" "md2man\-0.0.0" "File Formats Manual"
+.SS NAME
+.PP
+md2man \-\- markdown syntax for \f[B]md2man\f[](1)
+.SS DESCRIPTION
+.PP
+First line:
+.IP
+.nf
+\f[C]
+%\ COMMAND(n)\ command\-version\ |\ Title
+\f[]
+.fi
+.IP \[bu] 2
+\f[C]n\f[] is section number.
+.IP \[bu] 2
+\f[C]command\-version\f[] will be displayed in footer.
+.IP \[bu] 2
+\f[C]Title\f[] will be displayed in Header.
+.PP
+Others are just normal pandoc markdown.
+.SS EXAMPLE
+.IP
+.nf
+\f[C]
+%\ MD2MAN(1)\ md2man\-0.0.0\ |\ General\ Commands\ Manual
+
+NAME
+\-\-\-\-\-
+
+md2man(1)\ \-\-\ convert\ markdown\ to\ groff\ man
+
+SYNOPSIS
+\-\-\-\-\-\-\-\-\-\-
+
+`md2man`\ [*cmd.1.md*\ ...]
+`md2man`\ [**\-h**]
+
+DESCRIPTION
+\-\-\-\-\-\-\-\-\-\-\-\-
+
+`md2man\ [cmd.1.md\ ...]`\ converts\ markdown\ files\ to\ groff\ man.
+
+\&...
+\f[]
+.fi
+.PP
+Will be rendered as:
+.PP
+MD2MAN(5) File Formats Manual MD2MAN(5)
+.SS NAME
+.PP
+md2man(1) \-\- convert markdown to groff man
+.SS SYNOPSIS
+.PP
+\f[C]md2man\f[] [\f[I]cmd.1.md\f[] ...] \f[C]md2man\f[] [\f[B]\-h\f[]]
+.SS DESCRIPTION
+.PP
+\f[C]md2man\ [cmd.1.md\ ...]\f[] converts markdown files to groff man.
+.PP
+\&...
+.PP
+md2man\-0.0.0 MD2MAN(5)
+.SS SEE ALSO
+.PP
+\f[B]md2man\f[](1), \f[B]pandoc\f[](1), \f[B]pandoc\f[](5)
