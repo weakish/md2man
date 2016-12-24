@@ -16,7 +16,12 @@ First line:
 - `command-version` will be displayed in footer.
 - `Title` will be displayed in Header.
 
-Others are just normal pandoc markdown.
+Others are just normal markdown, except that:
+
+A backslash-escaped newline (A backslash-escaped newline)
+is also parsed as a hard line break.
+This is a nice alternative to Markdown's "invisible" way
+of indicating hard line breaks using two trailing spaces on a line.
 
 EXAMPLE
 --------
@@ -32,7 +37,7 @@ md2man(1) -- convert markdown to groff man
 SYNOPSIS
 ----------
 
-`md2man` [*cmd.1.md* ...]
+`md2man` [*cmd.1.md* ...]\
 `md2man` [**-h**]
 
 DESCRIPTION

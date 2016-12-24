@@ -8,7 +8,7 @@ md2man(1) -- convert markdown to groff man
 SYNOPSIS
 ----------
 
-`md2man` [*cmd.1.md* ...]
+`md2man` [*cmd.1.md* ...]\
 `md2man` [**-h**]
 
 DESCRIPTION

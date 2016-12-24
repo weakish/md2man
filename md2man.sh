@@ -7,7 +7,7 @@ usage() {
 
 markdown_to_man() {
   for i in "$@"; do
-    pandoc --standalone --from markdown --to man --output ${i%.*} $i
+    pandoc --standalone --from markdown+all_symbols_escapable --to man --output ${i%.*} $i
   done
 }
 
