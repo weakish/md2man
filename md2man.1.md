@@ -28,18 +28,6 @@ OPTIONS
 
 > Print usage message.
 
-AUTHOR
--------
-
-Jakukyo Friel <weakish@gmail.com>
-
-COPYRIGHT
-----------
-
-Copyright (c) 2015 Jakukyo Friel.
-
-License MIT.
-
 SEE ALSO
 ----------
 
